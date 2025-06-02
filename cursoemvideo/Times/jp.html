@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jovem Plan</title>
+    <link rel="stylesheet" href="stylr.css">
+</head>
+<body onload="carregar()">
+    <header>
+        <h1>Elenco Jovem Plan</h1>
+    </header>
+    <section>
+        <div>
+            <p>Jogador:
+                <input type="text" name="txtj" id="txtj">
+            </p>
+            <p>Campeonato: 
+                <input type="radio" name="radioc" id="ter" checked>
+                <label for="ter">Terrão</label>
+                <input type="radio" name="radioc" id="sin">
+                <label for="sin">Sintético</label>
+            </p>
+            <p>
+                <input id="button" type="button" value="verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="res">
+            Preencha os dados acima para ver o resultado
+        </div>
+    </section>
+    <footer>
+        <p>&copy;BG</p>
+    </footer>
+    <script src="prt.js"></script>
+</body>
+</html>

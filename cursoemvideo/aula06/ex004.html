@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text name</title>
+    <style>
+        body {
+            background-color: darkorange;
+            color: white;
+            font-size: medium;
+
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual o seu nome?')
+        var rs = window.prompt('Qual o seu sálario?')
+        rs.toFixed(2).replace('.' ,',')
+        document.write (`Olá ${nome} é um prazer em te conhecer ${nome.toUpperCase()}`)
+        rs.toString('pt-BR' , {style: 'currency', currency: 'BRL'})
+        document.write (`${rs}`)
+        
+    </script>
+</body>
+</html>
